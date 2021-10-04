@@ -9,10 +9,11 @@ function registerUser() {
         phone: num,
     }
     let method = "POST";
-    let url = "https://6c0c-2405-201-8011-c842-8cae-8505-9b19-19e5.ngrok.io/signup"
+    let url = "https://0cbf-2405-201-8011-c842-a0c7-c5b6-8afb-ec0a.ngrok.io/signup"
     var xhr = new XMLHttpRequest();
 
     xhr.open(method, url, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(data));
 
     xhr.onreadystatechange = function () {
